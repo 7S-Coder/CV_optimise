@@ -1,0 +1,23 @@
+nav {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-color);
+    color: var(--primary-white-color);
+    padding: 0 2rem;
+
+}
+
+nav, ul {
+    display: flex;
+    
+}
+
+ul {
+    list-style-type: none;
+    li {
+        text-transform: uppercase;
+        margin: 0 10px;
+    
+    }
+}
