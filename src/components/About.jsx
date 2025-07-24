@@ -21,14 +21,16 @@ function About () {
                     <div className="competences">
                         {AboutJson.competences.map((competence, index) => (
                             <div key={index} className="competence-item">
-                                <span className="competence-name">{competence.name}</span>
+                                <div className="competence-header">
+                                    <span className="competence-name">{competence.name}</span>
+                                    <span className="competence-level">{competence.level}%</span>
+                                </div>
                                 <div className="progress-bar">
                                     <div 
                                         className="progress-fill" 
                                         style={{width: `${competence.level}%`}}
                                     ></div>
                                 </div>
-                                <span className="competence-level"> {competence.level}%</span>
                             </div>
                         ))}
                     </div>
