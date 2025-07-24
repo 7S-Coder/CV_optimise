@@ -1,6 +1,7 @@
 import Nav from "../components/Nav.jsx";
 import Hero from "../components/Hero.jsx";
 import About from "../components/About.jsx";
+import Footer from "../components/Footer.jsx";
 
 function Home() {
 
@@ -11,6 +12,7 @@ function Home() {
     <Hero /> 
     <About />
     </main>
+    <Footer />
     </>
   )
 }
