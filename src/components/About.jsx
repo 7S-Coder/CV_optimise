@@ -16,7 +16,7 @@ function About () {
 
                 </section>
                 <section>
-                    <img src="/public/web_developper2.jpg" alt="Un developpeur web entouré d'ordinateurs." />
+                    <img src="/web_developper2.jpg" alt="Un developpeur web entouré d'ordinateurs." />
                     <h2>Mes compétences</h2>
                     <div className="competences">
                         {AboutJson.competences.map((competence, index) => (
