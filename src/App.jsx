@@ -5,10 +5,13 @@ import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Footer from './components/Footer';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <Router>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -16,6 +19,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+    <Footer />
     </Router>
   );
 }

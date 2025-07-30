@@ -1,11 +1,8 @@
-import Nav from "../components/Nav";
 
 
 function Realisations() {
   return (
     <>
-    <Nav/>
-
     </>
   );
 }
