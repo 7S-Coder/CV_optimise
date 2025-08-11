@@ -1,0 +1,108 @@
+#contact-container {
+  background-image: url("/clavier.png");
+  background-size: cover;
+  background-position: center;
+
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: 100%;
+
+  #contact {
+    background-color: white;
+  }
+
+  div {
+    width: 49%;
+  }
+
+  article {
+      margin-bottom: 6vh;
+
+  }
+
+  #title {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary-black-color);
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: var(--secondary-black-color);
+    }
+
+    
+  }
+
+  #contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+ 
+      input:not([type="submit"]), textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--primary-black-color);
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      button {
+        width: auto;
+        align-self: center;
+      }
+    }
+}
+
+#contact-container, #contact {
+  padding: 2rem;
+}
+
+#contact-container span::after, #contact-container h2::after {
+      content: "";
+      display: block;
+      
+      background-color: var(--primary-color);
+      margin: 1.5rem auto;
+      height: 5px;
+
+    } 
+
+  #contact-container span::after {
+    width: 14vw;
+  }
+ 
+  #contact-container h2::after {
+    width: 100%;
+  }
+
+  #contact section {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+#details {
+  width: 49%;
+
+  p {
+margin-bottom: 0; 
+  };
+  img {
+    margin-top: 2vh;
+    object-fit: cover;
+  }
+}
+
+input[type="submit"] {
+  width: 20px;
+  background-color: var(--primary-color);
+  color: white;
+}
