@@ -18,7 +18,7 @@ function Realisations() {
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-4">
               <div className="card">
-                <img src="/public/fresh-food.jpg" className="card-img-top" alt="Fresh food" />
+                <img src="/fresh-food.jpg" className="card-img-top" alt="Fresh food" />
                 <div className="card-body">
                   <h5 className="card-title">Fresh food</h5>
                   <p className="card-text">Réalisation d'un site avec commande en ligne.</p>
@@ -30,7 +30,7 @@ function Realisations() {
 
             <div className="col-lg-4 col-md-6 mb-4">
               <div className="card">
-                <img src="/public/restaurant-akira.jpg" className="card-img-top" alt="Restaurant Akira" />
+                <img src="/restaurant-akira.jpg" className="card-img-top" alt="Restaurant Akira" />
                 <div className="card-body">
                   <h5 className="card-title">Restaurant Akira</h5>
                   <p className="card-text">Réalisation d'un site vitrine.</p>
@@ -42,7 +42,7 @@ function Realisations() {
 
             <div className="col-lg-4 col-md-6 mb-4">
               <div className="card">
-                <img src="/public/espace-bien-etre.jpg" className="card-img-top" alt="Espace bien-être" />
+                <img src="/espace-bien-etre.jpg" className="card-img-top" alt="Espace bien-être" />
                 <div className="card-body">
                   <h5 className="card-title">Espace bien-être</h5>
                   <p className="card-text">Réalisation d'un site vitrine pour un patricien de bien-être.</p>
