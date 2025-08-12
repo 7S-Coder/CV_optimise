@@ -1,4 +1,4 @@
-import "../css/components/contact.scss";
+import "../css/components/Contact.scss";
 import Submit from "../ui/Submit";
 import { MapPin, Smartphone } from "lucide-react";
 
