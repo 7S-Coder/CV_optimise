@@ -1,13 +1,99 @@
-# React + Vite
+# CV Portfolio de John Doe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un site web portfolio moderne et responsive développé avec React.js, présentant les compétences, services et réalisations du développeur web John Doe.
 
-Currently, two official plugins are available:
+## 🚀 Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js** - Framework JavaScript pour l'interface utilisateur
+- **React Router** - Navigation côté client
+- **SCSS** - Préprocesseur CSS avec variables et mixins
+- **Bootstrap 5** - Framework CSS responsive
+- **Bootstrap Icons** - Icônes vectorielles
+- **Lucide React** - Icônes modernes pour React
+- **Vite** - Outil de build rapide
 
-## Expanding the ESLint configuration
+## 📱 Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# CV_optimise
+- ✅ Design responsive (mobile, tablette, desktop)
+- ✅ Navigation fluide avec React Router
+- ✅ Sections dynamiques avec données JSON
+- ✅ Menu mobile avec toggle
+- ✅ Scroll automatique vers le haut
+- ✅ Page légale avec sections expansibles
+- ✅ Formulaire de contact
+- ✅ Cards interactives pour blog et réalisations
+
+## 🏗️ Structure du projet
+
+```
+cv_optimise/
+├── public/
+│   ├── logo.ico
+│   └── images/
+├── src/
+│   ├── components/     # Composants réutilisables
+│   ├── pages/         # Pages de l'application
+│   ├── css/           # Styles SCSS
+│   ├── datas/         # Données JSON
+│   └── assets/        # Ressources statiques
+├── package.json
+└── vite.config.js
+```
+
+## 🛠️ Installation et démarrage
+
+1. **Cloner le repository**
+   ```bash
+   git clone https://github.com/7S-Coder/CV_optimise.git
+   cd CV_optimise
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+
+3. **Démarrer le serveur de développement**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build pour la production**
+   ```bash
+   npm run build
+   ```
+
+## 📄 Pages disponibles
+
+- **Accueil** (`/`) - Page d'accueil avec présentation
+- **À propos** (`/about`) - Informations personnelles et compétences
+- **Services** (`/services`) - Services proposés
+- **Réalisations** (`/realisations`) - Portfolio de projets
+- **Blog** (`/blog`) - Articles et actualités
+- **Contact** (`/contact`) - Formulaire de contact
+- **Mentions légales** (`/legal`) - Informations légales
+
+## 🎨 Personnalisation
+
+Les couleurs et styles peuvent être modifiés dans :
+- `src/App.css` - Variables CSS globales
+- `src/css/components/` - Styles spécifiques aux composants
+
+## 📱 Responsive Design
+
+Le site s'adapte automatiquement à tous les types d'écrans :
+- 📱 Mobile (< 480px)
+- 📟 Tablette (480px - 768px)
+- 💻 Desktop (> 768px)
+
+## 🚀 Déploiement
+
+Le site est configuré pour être déployé sur Vercel. Voir le fichier `vercel.json` pour la configuration.
+
+## 👨‍💻 Développé par
+
+John Doe - Étudiant au CEF
+
+## 📝 Licence
+
+Ce projet est sous licence MIT.
