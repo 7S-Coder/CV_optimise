@@ -1,4 +1,5 @@
 import "../css/components/Footer.scss";
+import { Link } from "react-router";
 
 function Footer() {
     return (
@@ -37,7 +38,7 @@ function Footer() {
                         <li><a href="#about">À propos</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Me contacter</a></li>
-                        <li><a href="#mentions">Mentions légales</a></li>
+                        <li><Link to="/legal">Mentions légales</Link></li>
                     </ul>
                 </div>
 

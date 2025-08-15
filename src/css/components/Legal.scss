@@ -1,0 +1,241 @@
+#legal-container {
+
+    a {
+      text-decoration: none;
+    }
+  .hero-legal {
+    background-color: var(--primary-white-color);
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .hero-legal h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 4px;
+      background-color: var(--primary-color);
+      margin: 1.5rem auto 0;
+      border-radius: 2px;
+    }
+  }
+
+  .hero-legal span {
+    font-size: 1.2rem;
+    color: var(--grey-color);
+  }
+
+  article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    .legal-section {
+      background: var(--primary-white-color);
+      border: 1px solid #e0e0e0;
+      border-radius: 0;
+      overflow: hidden;
+      
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      
+      &:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+      
+      &:not(:first-child) {
+        border-top: none;
+      }
+
+      .section-header {
+        padding: 20px;
+        background: var(--primary-white-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+
+        &:hover {
+          background: #e9ecef;
+        }
+
+        &.active {
+          background: #0080ff2f;
+        }
+
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+          color: var(--primary-color);
+          font-weight: 600;
+        }
+
+        h4 {
+          margin: 0;
+          font-size: 1rem;
+          color: rgb(9, 106, 233);
+          font-weight: 600;
+        }
+
+        .toggle-icon {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: var(--primary-color);
+        }
+
+        i.bi {
+          font-size: 1.2rem;
+          color: var(--primary-color);
+          transition: transform 0.2s ease;
+        }
+      }
+
+      .section-content {
+        padding: 20px;
+        padding-top: 0;
+        background-color: var(--primary-white-color);
+
+        h4 {
+          margin: 0 0 15px 0;
+          font-size: 1.1rem;
+          color: var(--primary-black-color);
+        }
+
+        p {
+          margin:0;
+          color: var(--primary-black-color);
+          line-height: 1.6;
+          
+        }
+      }
+    }
+  }
+
+  // Responsive Design
+  @media (max-width: 768px) {
+    .hero-legal {
+      padding: 30px 0;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+
+        &::after {
+          width: 150px;
+          height: 3px;
+          margin: 1rem auto 0;
+        }
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    article {
+      margin: 30px auto;
+      padding: 0 15px;
+
+      .legal-section {
+        .section-header {
+          padding: 15px;
+
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          h4 {
+            font-size: 0.9rem;
+          }
+
+          i.bi {
+            font-size: 1.1rem;
+          }
+        }
+
+        .section-content {
+          padding: 15px;
+          padding-top: 0;
+
+          h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-legal {
+      padding: 20px 0;
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+
+        &::after {
+          width: 120px;
+          height: 2px;
+          margin: 0.8rem auto 0;
+        }
+      }
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    article {
+      margin: 20px auto;
+      padding: 0 10px;
+
+      .legal-section {
+        .section-header {
+          padding: 12px;
+
+          h3 {
+            font-size: 1rem;
+          }
+
+          h4 {
+            font-size: 0.85rem;
+          }
+
+          i.bi {
+            font-size: 1rem;
+          }
+        }
+
+        .section-content {
+          padding: 12px;
+          padding-top: 0;
+
+          h4 {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+          }
+
+          p {
+            font-size: 0.85rem;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}

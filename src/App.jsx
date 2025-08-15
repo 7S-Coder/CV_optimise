@@ -4,6 +4,7 @@ import Services from "./pages/Services";
 import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/realisations" element={<Realisations />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/legal" element={<Legal />} />
       </Routes>
 
     <Footer />
