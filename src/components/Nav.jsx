@@ -1,8 +1,18 @@
 import "../css/components/Nav.scss";
 import { Link, useLocation } from "react-router";
+import { useState } from "react";
 
 function Nav() {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -10,6 +20,7 @@ function Nav() {
         <Link 
           className={`navbar-brand fw-bold ${location.pathname === '/' ? 'active' : ''}`} 
           to="/"
+          onClick={closeMenu}
         >
           John Doe
         </Link>
@@ -17,18 +28,19 @@ function Nav() {
         <button 
           className="navbar-toggler" 
           type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link 
                 className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} 
                 to="/"
+                onClick={closeMenu}
               >
                 Accueil
               </Link>
@@ -37,6 +49,7 @@ function Nav() {
               <Link 
                 className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} 
                 to="/services"
+                onClick={closeMenu}
               >
                 Services
               </Link>
@@ -45,6 +58,7 @@ function Nav() {
               <Link 
                 className={`nav-link ${location.pathname === '/realisations' ? 'active' : ''}`} 
                 to="/realisations"
+                onClick={closeMenu}
               >
                 Réalisations
               </Link>
@@ -53,6 +67,7 @@ function Nav() {
               <Link 
                 className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} 
                 to="/blog"
+                onClick={closeMenu}
               >
                 Blog
               </Link>
@@ -61,6 +76,7 @@ function Nav() {
               <Link 
                 className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} 
                 to="/contact"
+                onClick={closeMenu}
               >
                 Me contacter
               </Link>

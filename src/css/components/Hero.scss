@@ -24,3 +24,70 @@
         }
     }
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero {
+        .hero-content {
+            width: 70vw;
+            
+            .hero-title {
+                font-size: 3.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        .hero-content {
+            width: 80vw;
+            
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: calc(100vh - 80px);
+        
+        .hero-content {
+            width: 90vw;
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        .hero-content {
+            width: 95vw;
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
