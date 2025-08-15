@@ -2,6 +2,13 @@ import "../css/components/Footer.scss";
 import { Link } from "react-router";
 
 function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <footer id="footer">
             <div className="footer-container">
@@ -34,10 +41,10 @@ function Footer() {
                 <div className="footer-section">
                     <h4>Liens utiles</h4>
                     <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Me contacter</a></li>
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><Link to="/about">À propos</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/contact">Me contacter</Link></li>
                         <li><Link to="/legal">Mentions légales</Link></li>
                     </ul>
                 </div>
@@ -45,24 +52,24 @@ function Footer() {
                 <div className="footer-section">
                     <h4>Mes dernières réalisations</h4>
                     <ul>
-                        <li><a href="#">Fresh food</a></li>
-                        <li><a href="#">Restaurant Akira</a></li>
-                        <li><a href="#">Espace bien-être</a></li>
+                        <li><Link to="/realisations" onClick={scrollToTop}>Fresh food</Link></li>
+                        <li><Link to="/realisations" onClick={scrollToTop}>Restaurant Akira</Link></li>
+                        <li><Link to="/realisations" onClick={scrollToTop}>Espace bien-être</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h4>Mes derniers articles</h4>
                     <ul>
-                        <li><a href="#">Coder son site en HTML/CSS</a></li>
-                        <li><a href="#">Vendre ses produits sur le web</a></li>
-                        <li><a href="#">Se positionner sur Google</a></li>
+                        <li><Link to="/blog" onClick={scrollToTop}>Coder son site en HTML/CSS</Link></li>
+                        <li><Link to="/blog" onClick={scrollToTop}>Vendre ses produits sur le web</Link></li>
+                        <li><Link to="/blog" onClick={scrollToTop}>Se positionner sur Google</Link></li>
                     </ul>
                 </div>
             </div>
 
             <div className="footer-bottom">
-                <p>© Designed by John Doe</p>
+                <a href=" https://api.github.com/users/github-john-doe">© Designed by John Doe</a>
             </div>
         </footer>
     );

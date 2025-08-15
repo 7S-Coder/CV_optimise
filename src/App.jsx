@@ -8,10 +8,12 @@ import Legal from "./pages/Legal";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Footer from './components/Footer';
 import Nav from './components/Nav';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
