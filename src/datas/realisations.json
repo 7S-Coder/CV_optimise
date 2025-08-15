@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Fresh food",
+    "description": "Réalisation d'un site avec commande en ligne.",
+    "image": "/fresh-food.jpg",
+    "altText": "Fresh food",
+    "technology": "Site réalisé avec PHP et MySQL",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Restaurant Akira",
+    "description": "Réalisation d'un site vitrine.",
+    "image": "/restaurant-akira.jpg",
+    "altText": "Restaurant Akira",
+    "technology": "Site réalisé avec WordPress",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Espace bien-être",
+    "description": "Réalisation d'un site vitrine pour un patricien de bien-être.",
+    "image": "/espace-bien-etre.jpg",
+    "altText": "Espace bien-être",
+    "technology": "Site réalisé en HTML/CSS",
+    "link": "#"
+  }
+]
